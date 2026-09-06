@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Sebastian Guaqueta Jaar is a Duke biomedical and mechanical engineering student interested in medical-device design, prototyping, and testing."
+    />
+    <meta name="theme-color" content="#071725" />
+    <meta property="og:title" content="Sebastian Guaqueta Jaar — Engineering Portfolio" />
+    <meta
+      property="og:description"
+      content="Biomedical and mechanical engineering projects, including medical-device prototypes, CAD, electronics, and physical testing."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="assets/sgj-mark.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <title>Sebastian Guaqueta Jaar — Engineering Portfolio</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="Sebastian Guaqueta Jaar, home">
+        <span class="brand-mark" aria-hidden="true">SGJ</span>
+        <span>Sebastian Guaqueta Jaar</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#work">Projects</a>
+        <a href="#about">About</a>
+        <a href="Sebastian-Guaqueta-Jaar-Resume.pdf" download>Résumé</a>
+      </nav>
+      <a class="header-contact" href="mailto:sebastian.guaquetajaar@duke.edu">Email me</a>
+    </header>
+
+    <main id="main">
+      <section class="home-hero page-width" id="top">
+        <div class="hero-main reveal">
+          <p class="kicker">Biomedical Engineering + Mechanical Engineering</p>
+          <h1>Hi, I’m Sebastian.</h1>
+          <p class="hero-intro">
+            I’m a Duke engineering student who likes projects that move between
+            CAD, circuitry, physical prototypes, and testing. I’m especially
+            interested in medical devices and product development.
+          </p>
+          <div class="hero-links">
+            <a class="button button-dark" href="#work">View my projects</a>
+            <a class="plain-link" href="Sebastian-Guaqueta-Jaar-Resume.pdf" download>
+              Download résumé <span aria-hidden="true">↓</span>
+            </a>
+          </div>
+        </div>
+
+        <aside class="current-card reveal" aria-label="Current information">
+          <p class="small-label">Currently</p>
+          <dl>
+            <div>
+              <dt>At</dt>
+              <dd>Duke University</dd>
+            </div>
+            <div>
+              <dt>Graduating</dt>
+              <dd>May 2029</dd>
+            </div>
+            <div>
+              <dt>Coursework</dt>
+              <dd>Quantitative Physiology, Mechanics of Solids, and ECE Fundamentals</dd>
+            </div>
+            <div>
+              <dt>Looking for</dt>
+              <dd>Summer 2027 engineering internships</dd>
+            </div>
+          </dl>
+        </aside>
+      </section>
+
+      <section class="work page-width" id="work" aria-labelledby="work-title">
+        <div class="section-intro reveal">
+          <p class="kicker">Selected projects</p>
+          <h2 id="work-title">Three projects I can talk through in detail.</h2>
+          <p>
+            These pages go beyond the résumé: what the project needed to do,
+            what I was responsible for, what we tested, and what I would change next.
+          </p>
+        </div>
+
+        <article class="feature-card reveal">
+          <a class="feature-media project-cover project-cover-contain" href="projects/neo-thermo/" aria-label="Read the Neo-Thermo project">
+            <img
+              src="assets/neo-thermo-prototype.jpg"
+              alt="Neo-Thermo prototype with insulated heating wrap, blue electronics enclosure, OLED display, indicator lights, and power adapter"
+            />
+            <span class="cover-label">Neo-Thermo · working prototype</span>
+          </a>
+          <div class="feature-copy">
+            <p class="project-context">DukeEngage BioSpark · Summer 2026</p>
+            <h3><a href="projects/neo-thermo/">Neo-Thermo</a></h3>
+            <p>
+              An approximately $65 early-stage system designed to monitor and warm
+              gas in neonatal respiratory tubing for resource-limited hospitals.
+            </p>
+            <dl class="quick-results">
+              <div>
+                <dt>0.64°C</dt>
+                <dd>temperature-model MAE</dd>
+              </div>
+              <div>
+                <dt>8/10</dt>
+                <dd>estimates within ±1°C</dd>
+              </div>
+              <div>
+                <dt>~300</dt>
+                <dd>healthcare needs reviewed</dd>
+              </div>
+            </dl>
+            <p class="role-note">
+              <strong>My role:</strong> Duke-side electronics integration,
+              Arduino programming, troubleshooting, and preliminary thermal testing.
+            </p>
+            <a class="project-link" href="projects/neo-thermo/">
+              Read the case study <span aria-hidden="true">→</span>
+            </a>
+          </div>
+        </article>
+
+        <div class="project-card-grid">
+          <article class="project-card reveal">
+            <a class="card-media project-cover" href="projects/medication-adherence/" aria-label="Read the medication adherence project">
+              <img
+                src="assets/medication-pill-module.jpg"
+                alt="Medication-adherence prototype with an illuminated pill-bottle module mounted on a white electronics enclosure"
+                loading="lazy"
+              />
+              <span class="cover-label">Medication-adherence system · pill-bottle module</span>
+            </a>
+            <div class="card-copy">
+              <p class="project-context">EGR 101 Design · Fall 2025</p>
+              <h3><a href="projects/medication-adherence/">Medication-adherence alarm</a></h3>
+              <p>
+                A BLE/NFC-connected wristband system created to help adults with
+                ADHD notice and confirm scheduled medication alerts.
+              </p>
+              <p class="role-note">
+                <strong>My role:</strong> Concept generation and screening,
+                CAD, and medium-fidelity physical prototyping.
+              </p>
+              <a class="project-link" href="projects/medication-adherence/">
+                Read the case study <span aria-hidden="true">→</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <a class="card-media research-cover" href="projects/biomimicry-hull/" aria-label="Read the biomimicry hull research project">
+              <span class="research-cover-top">Published research · NHSJS</span>
+              <strong>Nature-inspired hull design</strong>
+              <dl>
+                <div>
+                  <dt>4</dt>
+                  <dd>hull designs</dd>
+                </div>
+                <div>
+                  <dt>3×</dt>
+                  <dd>trials each</dd>
+                </div>
+                <div>
+                  <dt>20+</dt>
+                  <dd>applications reviewed</dd>
+                </div>
+              </dl>
+              <span class="research-cover-foot">Read the study <span aria-hidden="true">→</span></span>
+            </a>
+            <div class="card-copy">
+              <p class="project-context">Published research · 2025</p>
+              <h3><a href="projects/biomimicry-hull/">Biomimicry in hull design</a></h3>
+              <p>
+                An experimental comparison of four hull patterns, supported by
+                a literature review of more than 20 biomimicry applications.
+              </p>
+              <p class="role-note">
+                <strong>My role:</strong> Research question, literature review,
+                experimental design, data analysis, and a 10-page LaTeX paper.
+              </p>
+              <a class="project-link" href="projects/biomimicry-hull/">
+                Read the case study <span aria-hidden="true">→</span>
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="ongoing page-width" aria-labelledby="ongoing-title">
+        <div class="section-intro compact-intro reveal">
+          <p class="kicker">Ongoing team work</p>
+          <h2 id="ongoing-title">Projects still in progress.</h2>
+          <p>
+            I’m listing these honestly as current work rather than presenting
+            them as finished case studies.
+          </p>
+        </div>
+        <div class="ongoing-list">
+          <article class="ongoing-item reveal">
+            <p class="ongoing-date">Sep 2025–Present</p>
+            <div>
+              <h3>Low-cost endoscopic tissue retraction device</h3>
+              <p class="ongoing-org">Duke MedDesign · Mechanical Components Team</p>
+              <p>
+                Co-developed CAD models and mechanical drawings for a tissue anchor
+                with a slider-actuated claw, one-handed thumb ring, and dual
+                off-axis cables for controlled bending.
+              </p>
+            </div>
+            <ul class="simple-tags" aria-label="Endoscopic device skills">
+              <li>Onshape</li>
+              <li>Mechanism design</li>
+              <li>Mechanical drawings</li>
+            </ul>
+            <figure class="ongoing-figure">
+              <img
+                src="assets/endoscopy-anchor-overview.png"
+                alt="Three team design views for the endoscopy anchor: a CAD prototype, the right-anchor linkage, and a PCB layout"
+                loading="lazy"
+              />
+              <figcaption>
+                Team design overview. My work focused on the anchor mechanism,
+                handle geometry, and related mechanical components rather than the PCB.
+              </figcaption>
+            </figure>
+          </article>
+
+          <article class="ongoing-item reveal">
+            <p class="ongoing-date">Sep 2025–Present</p>
+            <div>
+              <h3>Pediatric “Grow-With-Me” prosthetic arm</h3>
+              <p class="ongoing-org">Duke eNABLE · Prosthetic Design Team</p>
+              <p>
+                Developed three candidate concepts for an adjustable
+                forearm-to-wrist interface and compared existing pediatric
+                prosthetic designs and cost-reduction strategies.
+              </p>
+            </div>
+            <ul class="simple-tags" aria-label="Prosthetic project skills">
+              <li>Concept development</li>
+              <li>Benchmarking</li>
+              <li>Design for growth</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="about page-width" id="about" aria-labelledby="about-title">
+        <div class="about-copy reveal">
+          <p class="kicker">About</p>
+          <h2 id="about-title">Why both BME and mechanical engineering?</h2>
+          <p>
+            I’m interested in the point where a clinical need becomes a physical
+            system: a mechanism, sensor, enclosure, test plan, or manufacturing
+            decision. Studying both fields gives me room to understand the medical
+            context while building a deeper mechanical foundation.
+          </p>
+          <p>
+            At Duke, my work has included medical-device teams, global health
+            design, embedded electronics, CAD, and physical testing. I’m still
+            early in my engineering education, and this portfolio will keep changing
+            as the projects do.
+          </p>
+        </div>
+
+        <aside class="skills-card reveal">
+          <h3>What I work with</h3>
+          <div class="skill-group">
+            <h4>Design and prototyping</h4>
+            <p>Fusion 360, Onshape, mechanical drawings, concept screening, physical prototyping</p>
+          </div>
+          <div class="skill-group">
+            <h4>Electronics and programming</h4>
+            <p>Arduino, Java, Python, circuit assembly, soldering, sensor and relay integration</p>
+          </div>
+          <div class="skill-group">
+            <h4>Testing and communication</h4>
+            <p>Sensor calibration, thermal testing, data analysis, technical posters, presentations, LaTeX</p>
+          </div>
+        </aside>
+      </section>
+
+      <section class="contact page-width" aria-labelledby="contact-title">
+        <div class="contact-inner reveal">
+          <p class="kicker">Contact</p>
+          <h2 id="contact-title">Thanks for taking a look.</h2>
+          <p>
+            I’m interested in Summer 2027 internships involving medical devices,
+            mechanical design, product development, testing, or manufacturing.
+          </p>
+          <div class="contact-links">
+            <a class="button button-light" href="mailto:sebastian.guaquetajaar@duke.edu">
+              sebastian.guaquetajaar@duke.edu
+            </a>
+            <a
+              class="plain-link plain-link-light"
+              href="https://www.linkedin.com/in/sebastian-guaqueta-jaar"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LinkedIn <span aria-hidden="true">↗</span>
+            </a>
+            <a class="plain-link plain-link-light" href="Sebastian-Guaqueta-Jaar-Resume.pdf" download>
+              Résumé <span aria-hidden="true">↓</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer page-width">
+      <p>© <span data-year>2026</span> Sebastian Guaqueta Jaar</p>
+      <a href="#top">Back to top ↑</a>
+    </footer>
+  </body>
+</html>
