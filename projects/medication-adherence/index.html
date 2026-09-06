@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A Duke EGR 101 medication-adherence system using wristband alerts, a pill-bottle module, BLE, and NFC."
+    />
+    <meta name="theme-color" content="#071725" />
+    <meta property="og:title" content="Medication-Adherence Alarm — Sebastian Guaqueta Jaar" />
+    <meta
+      property="og:description"
+      content="Concept development, CAD, prototyping, system integration, and testing for a medication-adherence wristband."
+    />
+    <meta property="og:type" content="article" />
+    <link rel="icon" href="../../assets/sgj-mark.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../../styles.css" />
+    <script src="../../script.js" defer></script>
+    <title>Medication-Adherence Alarm — Sebastian Guaqueta Jaar</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header" data-header>
+      <a class="brand" href="../../" aria-label="Sebastian Guaqueta Jaar, home">
+        <span class="brand-mark" aria-hidden="true">SGJ</span>
+        <span>Sebastian Guaqueta Jaar</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="../../#work">Projects</a>
+        <a href="../../#about">About</a>
+        <a href="../../Sebastian-Guaqueta-Jaar-Resume.pdf" download>Résumé</a>
+      </nav>
+      <a class="header-contact" href="mailto:sebastian.guaquetajaar@duke.edu">Email me</a>
+    </header>
+
+    <main id="main">
+      <section class="case-hero page-width">
+        <a class="back-link reveal" href="../../#work">← All projects</a>
+        <p class="kicker reveal">EGR 101 Design · Fall 2025</p>
+        <h1 class="reveal">Medication-adherence alarm</h1>
+        <p class="case-summary reveal">
+          A connected wristband and pill-bottle system designed to help adults
+          with ADHD notice medication reminders and confirm that the correct bottle was opened.
+        </p>
+        <dl class="case-facts reveal">
+          <div>
+            <dt>My role</dt>
+            <dd>Concept generation and screening, CAD, and medium-fidelity prototyping</dd>
+          </div>
+          <div>
+            <dt>Context</dt>
+            <dd>First-year Duke engineering design course</dd>
+          </div>
+          <div>
+            <dt>System</dt>
+            <dd>Web scheduling, pill-bottle module, wearable alerts, BLE, and NFC</dd>
+          </div>
+          <div>
+            <dt>Timeline</dt>
+            <dd>One semester</dd>
+          </div>
+        </dl>
+        <div class="case-actions reveal">
+          <a
+            class="button button-dark"
+            href="../../assets/medication-adherence-poster.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View the team project poster ↗
+          </a>
+        </div>
+      </section>
+
+      <section class="case-media-hero page-width reveal">
+        <div class="case-media-grid case-media-grid-split">
+          <figure class="project-figure">
+            <img
+              src="../../assets/medication-pill-module.jpg"
+              alt="Medication-adherence prototype with an illuminated pill-bottle module on a white electronics enclosure"
+            />
+            <figcaption>Pill-bottle module illuminated during an alert.</figcaption>
+          </figure>
+          <figure class="project-figure">
+            <img
+              src="../../assets/medication-wristband.jpg"
+              alt="Black medication-adherence wristband prototype with a compact rectangular electronics enclosure"
+            />
+            <figcaption>Final wristband prototype with vibration motor.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <aside class="decision-section page-width reveal" aria-labelledby="medication-decision-title">
+        <p class="small-label">Key design decision</p>
+        <h2 id="medication-decision-title">Make confirmation physical.</h2>
+        <p>
+          A conventional alarm can be dismissed without taking the medication.
+          We paired a wearable alert with an NFC-tagged bottle so clearing the
+          reminder required a deliberate interaction with the correct container.
+        </p>
+      </aside>
+
+      <section class="case-section page-width">
+        <div class="case-section-label reveal">
+          <span>01</span>
+          <h2>The design question</h2>
+        </div>
+        <div class="case-prose reveal">
+          <p class="lead">
+            How could a medication reminder be difficult to overlook without
+            becoming another phone notification that is easy to dismiss?
+          </p>
+          <p>
+            Our team focused on adults with ADHD and proposed a wearable alert
+            that connected to a scheduled medication and a tagged pill bottle.
+            The goal was not simply to send a reminder, but to connect the alert
+            to a physical confirmation step.
+          </p>
+        </div>
+      </section>
+
+      <section class="case-section page-width">
+        <div class="case-section-label reveal">
+          <span>02</span>
+          <h2>The system</h2>
+        </div>
+        <div class="system-block system-block-four reveal" role="img" aria-label="Web scheduling sends a reminder to the wristband, the user scans the tagged pill bottle, and the system records confirmation">
+          <div>
+            <span>Plan</span>
+            <strong>Web schedule</strong>
+            <small>Set medication timing</small>
+          </div>
+          <b aria-hidden="true">→</b>
+          <div>
+            <span>Alert</span>
+            <strong>Wristband</strong>
+            <small>Notify the user</small>
+          </div>
+          <b aria-hidden="true">→</b>
+          <div>
+            <span>Confirm</span>
+            <strong>NFC bottle tag</strong>
+            <small>Identify the medication</small>
+          </div>
+          <b aria-hidden="true">→</b>
+          <div>
+            <span>Record</span>
+            <strong>Connected system</strong>
+            <small>Register the event</small>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-section page-width">
+        <div class="case-section-label reveal">
+          <span>03</span>
+          <h2>My contribution</h2>
+        </div>
+        <div class="case-prose reveal">
+          <p class="lead">
+            My work centered on turning a broad problem into a physical concept
+            that the team could compare, build, wear, and test.
+          </p>
+        </div>
+        <div class="contribution-grid three-up reveal">
+          <article>
+            <h3>Concept generation</h3>
+            <p>
+              Generated candidate solutions and helped screen them against
+              usability, feasibility, and course constraints.
+            </p>
+          </article>
+          <article>
+            <h3>CAD and form</h3>
+            <p>
+              Created wristband CAD and used medium-fidelity models to evaluate
+              form, fit, component placement, and how the device would be worn.
+            </p>
+          </article>
+          <article>
+            <h3>Prototype iteration</h3>
+            <p>
+              Adjusted the physical concept as the electronic components and
+              system architecture became more concrete.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="process-media page-width">
+        <figure class="project-figure project-figure-dark reveal">
+          <img
+            src="../../assets/medication-scheduler.png"
+            alt="Web interface used to choose medication reminder times and days and save the schedule to the device"
+            loading="lazy"
+          />
+          <figcaption>
+            Team-built web interface for creating a weekly reminder schedule
+            and syncing it to the device.
+          </figcaption>
+        </figure>
+        <figure class="project-figure reveal">
+          <img
+            src="../../assets/medication-nfc-workflow.jpg"
+            alt="Workflow sketch showing a user tapping a tagged pill bottle with the wristband to confirm medication completion"
+            loading="lazy"
+          />
+          <figcaption>
+            Workflow concept: the user confirms completion by tapping the wearable
+            against the NFC-tagged bottle.
+          </figcaption>
+        </figure>
+      </section>
+
+      <section class="results-section page-width">
+        <div class="case-section-label reveal">
+          <span>04</span>
+          <h2>Team testing</h2>
+        </div>
+        <div class="test-grid reveal">
+          <article>
+            <strong>5/5</strong>
+            <p>Alert detections</p>
+          </article>
+          <article>
+            <strong>20/20</strong>
+            <p>Successful NFC scans</p>
+          </article>
+          <article>
+            <strong>30 m</strong>
+            <p>Demonstrated connectivity</p>
+          </article>
+          <article>
+            <strong>~14 days</strong>
+            <p>RTC-enabled runtime</p>
+          </article>
+        </div>
+        <div class="case-prose offset-prose reveal">
+          <p>
+            These were team-level prototype results under limited course testing,
+            not evidence that the system improved medication adherence. A stronger
+            evaluation would require representative users, a longer study period,
+            and clearer measures of usability and adherence behavior.
+          </p>
+          <p>
+            Battery life initially missed the four-day requirement: the Wi-Fi-only
+            version ran for about 14 hours. Moving reminder timing to a real-time
+            clock increased the measured runtime to approximately 14 days.
+          </p>
+        </div>
+      </section>
+
+      <section class="next-section">
+        <div class="page-width next-layout">
+          <div class="case-section-label light-label reveal">
+            <span>05</span>
+            <h2>What I would test next</h2>
+          </div>
+          <ol class="next-list reveal">
+            <li>
+              <span>01</span>
+              <p>Run usability testing with representative users and compare multiple alert patterns.</p>
+            </li>
+            <li>
+              <span>02</span>
+              <p>Measure long-term wear comfort, charging behavior, and whether users keep the wristband on.</p>
+            </li>
+            <li>
+              <span>03</span>
+              <p>Test failure cases such as scanning the wrong bottle, missed connectivity, and an uncharged device.</p>
+            </li>
+            <li>
+              <span>04</span>
+              <p>Refine the enclosure only after the internal component stack and charging method are fixed.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <nav class="case-navigation page-width" aria-label="Project navigation">
+        <a href="../neo-thermo/">← Previous: Neo-Thermo</a>
+        <a href="../biomimicry-hull/">Next: Biomimicry research →</a>
+      </nav>
+    </main>
+
+    <footer class="site-footer page-width">
+      <p>© <span data-year>2026</span> Sebastian Guaqueta Jaar</p>
+      <a href="mailto:sebastian.guaquetajaar@duke.edu">sebastian.guaquetajaar@duke.edu</a>
+    </footer>
+  </body>
+</html>
